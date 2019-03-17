@@ -6,7 +6,7 @@ class EstaditicaTest(TestCase):
         self.assertEqual(Estadistica().procesar_secuencia(""),[0, None, None],"Cadena vacio")
 
     def test_procesar_secuencia_cadenaConUnNumero(self):
-        self.assertEqual(Estadistica().procesar_secuencia("2"), [1, 2], "Un numero")
+        self.assertEqual(Estadistica().procesar_secuencia("2"), [1, 2, 2], "Un numero")
 
     def test_procesar_secuencia_cadenaConDosNumeros(self):
         self.assertEqual(Estadistica().procesar_secuencia("1,3"), [2, 1], "Dos numeros")
