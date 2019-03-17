@@ -6,7 +6,7 @@ class Estadistica:
             return [0, None]
         elif "," in cadena:
             numeros = cadena.split(",")
-            return [len(numeros)]
+            return [len(numeros), int(min(numeros))]
         else:
             return [1, int(min(cadena))]
 
