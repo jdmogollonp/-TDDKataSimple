@@ -1,5 +1,5 @@
 from unittest import TestCase
-import Estadistica
+from Estadistica import Estadistica
 
 class EstaditicaTest(TestCase):
     def test_procesar_secuencia(self):
