@@ -3,7 +3,7 @@ from Estadistica import Estadistica
 
 class EstaditicaTest(TestCase):
     def test_procesar_secuencia(self):
-        self.assertEqual(Estadistica().procesar_secuencia(""),[0, None, None],"Cadena vacio")
+        self.assertEqual(Estadistica().procesar_secuencia(""),[0, None, None, None],"Cadena vacio")
 
     def test_procesar_secuencia_cadenaConUnNumero(self):
         self.assertEqual(Estadistica().procesar_secuencia("2"), [1, 2, 2], "Un numero")
