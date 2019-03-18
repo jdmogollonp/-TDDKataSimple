@@ -7,7 +7,9 @@ class Estadistica:
             return [0, None, None, None]
         elif "," in cadena:
             numeros = cadena.split(",")
-            suma = int(numeros[0]) + int(numeros[1])
+            suma = 0
+            for num in numeros:
+                suma = suma + int(num)
             promedio = suma/len(numeros)
             return [len(numeros), int(min(numeros)), int(max(numeros)), promedio]
         else:
