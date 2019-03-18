@@ -1,4 +1,5 @@
 __author__ = "assistant"
+from statistics import mean
 
 class Estadistica:
     def procesar_secuencia(self,cadena):
@@ -8,6 +9,6 @@ class Estadistica:
             numeros = cadena.split(",")
             return [len(numeros), int(min(numeros)), int(max(numeros))]
         else:
-            return [1, int(min(cadena)), int(max(cadena))]
+            return [1, int(cadena), int(cadena), int(cadena)]
 
 
